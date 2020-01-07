@@ -1,0 +1,276 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vh;
+    background-color: #333333;
+}
+
+#img_back {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vh;
+    height: 10vh;
+    margin: 2vh 0vh 1vh 5vh;
+}
+
+#box_title_adivina {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#title_adivina {
+    display: flex;
+    font-size: 7vh;
+    margin-left: 5vh;
+    color: white;
+}
+
+#lenguas {
+    width: 25vh;
+    height: 6vh;
+    margin-top: 5vh;
+}
+
+.bandera {
+    width: 7vh;
+    margin-right: 1vh;
+    height: 4vh;
+}
+
+.rowAdivina {
+    display: flex;
+    flex-wrap: wrap;
+    height: 35vh;
+}
+
+.rowMicroText {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    margin-top: 3.5vh;
+    padding-top: 3vh;
+}
+
+.box_micro {
+    width: auto;
+    height: auto;
+    margin-right: 32vh;
+    margin-left: 39vh;
+}
+
+.img-micro {
+    height: 80%;
+    position: absolute;
+}
+
+.img-cara {
+    width: 11vh;
+    height: 11vh;
+    margin-left: 2vh;
+    margin-top: -3vh;
+    transform: rotate(-15deg);
+}
+
+.boxParaula {
+    width: 100vh;
+}
+
+#txtParaula {
+    background-color: #333333;
+    color: white;
+    padding: 1.5vh 3vh;
+    font-size: 7vh;
+
+}
+
+.boxAdivina {
+    margin: 1.5vh;
+    background-color: #B90000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vh;
+    background-position-y: 2vh;
+}
+
+.textAdivina {
+    display: flex;
+    font-size: 4vh;
+    text-align: left;
+    color: white;
+    justify-content: center;
+    margin-top: 24vh;
+}
+
+#boxEmissio {
+    background-image: url(../img/micro.png);
+}
+
+#boxTransmissio {
+    background-image: url(../img/antena.png);
+}
+
+#boxReceptor {
+    background-image: url(../img/auriculars.png);
+}
+
+#boxScore {
+    display: flex;
+    margin-left: 3vh;
+    font-size: 5vh;
+}
+
+#txtScore {
+    color: #B90000;
+}
+
+#score {
+    font-weight: bold;
+}
+
+#peu_pagina {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background: #333333;
+}
+
+#box_generalitat {
+    display: flex;
+    margin-left: 2vh;
+    padding-top: 2vh;
+    padding-right: 4vh;
+    border-right: 0.3vh solid white;
+}
+
+#img_generalitat {
+    display: flex;
+    height: 6vh;
+}
+
+#txt_generalitat {
+    display: flex;
+    color: white;
+    font-size: 2.2vh;
+    margin-left: 2vh;
+}
+
+#box_cep {
+    font-size: 2.2vh;
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}
+
+.modal-dialog {
+    max-width: 80vh;
+}
+
+.modal-content {
+    border: 0.5vh solid rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: #333333;
+    padding: 2vh;
+}
+
+.modal-title {
+    font-size: 4vh;
+    color: white;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    font-size: 2.5vh;
+    padding: 2vh;
+}
+
+.modal-footer {
+    background: #333333;
+    padding: 2vh;
+}
+
+.textButtonModal {
+    padding: 1vh 2vh;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.modal_micro {
+    display: flex;
+    margin-top: 4vh;
+    margin-right: 17vh;
+}
+
+.modal_microBody {
+    height: 75%;
+    position: absolute;
+}
+
+.modal_microCara {
+    width: 11vh;
+    height: 11vh;
+    margin-left: 2vh;
+    margin-top: -3vh;
+    transform: rotate(-15deg);
+}
+
+.modal_text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal final Joc */
+
+.finalModal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.finalModal-title {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    letter-spacing: 0.5vh;
+    color: #333333;
+}
+
+.finalModal-icon {
+    display: flex;
+    justify-content: center;
+    margin: 2.5vh;
+}
+
+#imgFinalModal {
+    width: 25vh;
+}
+
+.finalModal-footer {
+    display: flex;
+    flex-direction: row;
+    background: #333333;
+    padding: 2vh;
+}
+
+.finalModal-text {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 4vh;
+    color: white;
+}
+
+.finalModal-button {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+}

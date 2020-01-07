@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mapamundi</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/repdroducto.js"></script>
+    <script src="../bootstrap/js/popper.min.js"></script>
+    <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assets/back.png"
+        id="img_back"
+        onclick="location.href='../quiosc/quiosc.html';"
+        width="7%"
+      />
+
+      <div id="box_title_mapa">
+        <h1 class="text-center p-2" id="title_mapa">Mapamundi</h1>
+      </div>
+
+      <div id="lenguas">
+        <img
+          class="bandera"
+          src="../assets/lenguas/bandera_catalan.png"
+          alt=""
+        />
+        <img
+          class="bandera"
+          src="../assets/lenguas/bandera_espanola.png"
+          alt=""
+        />
+        <img
+          class="bandera"
+          src="../assets/lenguas/bandera_english.png"
+          alt=""
+        />
+      </div>
+    </header>
+    <div class="content">
+      <script src="js/core.js"></script>
+      <script src="js/maps.js"></script>
+      <script src="js/worldLow.js"></script>
+      <script src="js/animated.js"></script>
+      
+      <!--
+      <script src="https://www.amcharts.com/lib/4/core.js"></script>
+      <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+      <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+-->
+      <div id="chartdiv"></div>
+      <!-- partial -->
+
+    <audio id="audio">
+    </audio>
+    
+    <div class="audio-player">
+   
+      <div class="info">
+        <h2 id ="titulotest">Prem sobre una rodona</h2>
+        <p id="timeleft">00:00</p>
+		<div class="progressbar_slide">
+			<div class="progressbar_range"></div>
+		</div>
+     
+      </div>
+      <div class="controls">
+        <div class="controls_plays">
+    
+    
+    
+          <svg id="plays_btn" viewBox="0 0 24.5 30.9">
+            <g id="play_btn">
+              <path d="M0,30.9L0,0l24.5,15.4L0,30.9z"/>
+            </g>
+            <g id="pause_btn">
+              <rect x="0" y="0" width="8.2" height="30.9"/>
+              <rect x="16.2" y="0" width="8.2" height="30.9"/>
+            </g>
+          </svg>
+    
+      
+    
+        </div>
+        
+      </div>
+    
+    </div>
+
+    </div>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

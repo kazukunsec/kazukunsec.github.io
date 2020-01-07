@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Morse: la història de la ràdio</title>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script type="text/javascript" src="js/transmision.js"></script>
+        <script src="../js/cookies.js"></script>
+        
+        <script src="../../bootstrap/js/popper.min.js"></script>
+        <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../../assets/back.png" id="img_back" onclick="location.href='../../quiosc/quiosc.html';">
+
+            <div id="box_title_morse">
+                <h1 class="text-center p-2" id="title_morse">Morse: la història de la ràdio</h1>
+            </div>
+            
+            <div id="lenguas"> 
+                <img class="bandera" src="../../assets/lenguas/bandera_catalan.png" alt="">
+                <img class="bandera" src="../../assets/lenguas/bandera_espanola.png" alt="">
+                <img class="bandera" src="../../assets/lenguas/bandera_english.png" alt="">
+            </div>
+        </header>
+
+        <!-- Modal explicació joc -->
+        <div id="explicacioJoc" class="modal fade" role="dialog">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Morse: el codi secret</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal_micro">
+                            <img src="./img/micro_full.png" alt="" class="modal_microBody">
+                            <img src="./img/cara_micro.png" alt="" class="modal_microBody modal_microCara">
+                        </div>
+
+                        <div class="modal_text">
+                            <p>Felicitats per superar la prova anterior!</p>
+                            <p>Ara que ja saps com funcionen aquests jocs, prepara't. Aquest joc tracta d'adivinar quin codi morse equival a conceptes relacionats amb la transmissió. <br>
+                            Cada paraula correcte et sumarà 1 punt, per tant, com menys fallis, més punts faràs!</p>
+                            <p>May the force with you.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger textButtonModal" data-dismiss="modal">Tancar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="mostrarImgMorse">
+                <div id="titleMorse">
+                    Guia Morse
+                </div>
+
+                <img id ="imgMorse" src="img/morse.png"  width="520" height="240" class=" img-fluid" alt="">
+
+                <div id="boxScore">
+                    <div id="txtScore">
+                        Puntuació:&nbsp;
+                    </div>
+                    <div id="score">0</div>
+                </div>
+            </div>
+
+            <div id="boxContent">
+                <div id="boxParaula"></div>
+
+                <div id="boxParaulesMorse">
+                    <div class="row">
+                        <div class="boxMorse" id="morse1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="boxMorse" id="morse2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal final de joc -->
+        <div id="modalFinal" class="modal fade modal--congratulations" role="dialog">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="finalModal-body">
+                        <div class="finalModal-title">
+                            Felicitats!!
+                        </div>
+
+                        <div class="finalModal-icon">
+                            <img id="imgFinalModal" src="./img/copa.png" alt="Trophy" />
+                        </div>
+                    </div>
+                    <div class="finalModal-footer">
+                        <div class="finalModal-text">
+                            Passa al següent joc
+                        </div>
+
+                        <div class="finalModal-button">
+                            <button type="button" class="btn btn-danger textButtonModal" data-dismiss="modal" onclick="location.href='../recepcio/recepcio.html';">Puzzle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="peu_pagina">
+            <div id="box_generalitat">
+                <img id="img_generalitat" src="../../assets/logo_generalitat_catalunya.png" alt="">
+                <div id="txt_generalitat">
+                    Generalitat <br> de Catalunya
+                </div>
+            </div>
+
+            <div id="box_cep">
+                Centre d'Estudis <br> <strong>Politècnics</strong>
+            </div>
+        </footer>
+    </body>
+</html>

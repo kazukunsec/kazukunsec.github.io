@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Quiosc</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome-free-5.11.2-web/css/all.min.css">
+
+        <script type="text/javascript" src="js/quiosc.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <script src="../bootstrap/js/popper.min.js"></script>
+        <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div id="box_logo_mNACTEC">
+                <img id="logo_mNACTEC" src="../assets/logo_mNACTEC.png" alt="">
+            </div>
+
+            <div class="box_title_radio">
+                <h1 class="text-right" id="title_museu">Museu Nacional de la Ciència i de la Tècnica de Catalunya</h1>
+                <h1 class="text-left" id="title_radio">La ràdio</h1>
+            </div>
+
+            <div id="lenguas">
+                <img class="bandera" src="../assets/lenguas/bandera_catalan.png" alt="">
+                <img class="bandera" src="../assets/lenguas/bandera_espanola.png" alt="">
+                <img class="bandera" src="../assets/lenguas/bandera_english.png" alt="">
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="justify-content-center row_size">
+                <div class="col-3 div-micro">
+                    <div class="box_micro">
+                        <img src="./img/micro_full.png" alt="" class="img-micro">
+                        <img src="./img/cara_micro.png" alt="" class="img-micro img-cara">
+                    </div>
+                </div>
+                <button type="button" class="btn col-7 margin-button rounded btns_quiosc btn_mapa" onclick="location.href='../mapamundi/mapamundi.html';">
+                    <span class="txt_quiosc">Mapa</span>
+                </button>
+            </div>
+            <div class="justify-content-center row_size">
+                <button type="button" class="btn col-5 margin-button rounded btns_quiosc btn_radio" onclick="location.href='../radio/radio.html';">
+                    <span class="txt_quiosc">Funcionament de la ràdio</span>
+                </button>
+                <button type="button" class="btn col-5 margin-button rounded btns_quiosc btn_jocs" onclick="location.href='../jocs/emision/emision.html';">
+                    <span class="txt_quiosc">Jocs</span>
+                </button>
+            </div>
+        </div>
+
+        <footer id="peu_pagina">
+            <div id="box_generalitat">
+                <img id="img_generalitat" src="../assets/logo_generalitat_catalunya.png" alt="">
+                <div id="txt_generalitat">
+                    Generalitat <br> de Catalunya
+                </div>
+            </div>
+
+            <div id="box_cep">
+                Centre d'Estudis <br> <strong>Politècnics</strong>
+            </div>
+
+            <div id="box_about">
+                <img data-toggle="modal" data-target="#modalAbout" id="img_about" src="./img/about.png" alt="">
+            </div>
+
+            <div class="modal fade bd-example-modal-lg" id="modalAbout">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Qui som?</h4>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="col">
+                                <div class="card profile-card-2">
+                                    <div class="card-img-block centrarImagen">
+                                        <img class="img-fluid centrarImagen" src="img/FP/cep_white.png" width="400px" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <img src="./img/bitmoji/bitmoji_pol.png" alt="profile-image" class="profile">
+                                        <h5 class="card-title">Pol Benito</h5>
+                                        <p class="card-text">
+                                            Estudiant un Grau Superior de Desenvolupament d’Aplicacions per a Webs en el Centre d'Estudis Politècnics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="col">
+                                <div class="card profile-card-2">
+                                    <div class="card-img-block centrarImagen">
+                                        <img class="img-fluid centrarImagen" src="img/FP/cep_white.png" width="400px" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <img src="./img/bitmoji/bitmoji_ferran.png" alt="profile-image" class="profile">
+                                        <h5 class="card-title">Ferran Bové</h5>
+                                        <p class="card-text">
+                                            Estudiant un Grau Superior de Desenvolupament d’Aplicacions per a Webs en el Centre d'Estudis Politècnics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="col">
+                                <div class="card profile-card-2">
+                                    <div class="card-img-block centrarImagen">
+                                        <img class="img-fluid centrarImagen" src="img/FP/cep_white.png" width="400px" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <img src="./img/bitmoji/bitmoji_jordi.png" alt="profile-image" class="profile">
+                                        <h5 class="card-title">Jordi Sánchez</h5>
+                                        <p class="card-text">
+                                            Estudiant un Grau Superior de Desenvolupament d’Aplicacions per a Webs en el Centre d'Estudis Politècnics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn cerrar_about" data-dismiss="modal">Cerrar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

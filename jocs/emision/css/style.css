@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn_exit {
+  position: fixed;
+  color: white;
+  background-color: #322036;
+  width: 20vh;
+  height: 8vh;
+  bottom: 10px;
+  right: 10px;
+}
+
+body {
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+canvas {
+  padding: 0;
+  display: block;
+  margin: 100px auto 0px;
+  display: block;
+  border: solid 10px #B90000;
+
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vh;
+  background-color: #333333;
+}
+
+#img_back {
+  display: flex;
+  justify-content: flex-start;
+  width: 10vh;
+  height: 10vh;
+  margin: 2vh 0vh 1vh 5vh;
+}
+.colorNombre{
+  color: white;
+  margin-right: 41vh;
+  margin-bottom: 0rem;
+  font-size: 2vh;
+
+}
+input[type="text"] {
+  font-size: 2vh;
+}
+#box_title {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 3vh;
+}
+
+#title_joc {
+  display: flex;
+  align-items: center;
+  font-size: 5vh;
+  color: white;
+  font-weight: bold;
+  margin-right: 3vh;
+  border-right: 0.6vh solid white;
+  padding-right: 3vh;
+}
+
+#title_tipus {
+  display: flex;
+  font-size: 5vh;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+}
+
+#lenguas {
+  width: 25vh;
+  height: 6vh;
+  margin: 5vh 5vh 0vh 0vh;
+}
+
+.bandera {
+  width: 7vh;
+  margin-right: 1vh;
+  height: 4vh;
+}
+
+#box_title_joc {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#title_joc {
+  display: flex;
+  font-size: 7vh;
+  margin-left: 4vh;
+  color: white;
+}
+
+#lenguas {
+  width: 25vh;
+  height: 6vh;
+  margin-top: 5vh;
+}
+
+.bandera {
+  width: 7vh;
+  margin-right: 1vh;
+  height: 4vh;
+}
+
+.modal-dialog {
+  max-width: 80vh;
+}
+
+.modal-content {
+  border: 0.5vh solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: none;
+  background-color: #333333;
+  padding: 2vh;
+}
+
+.modal-title {
+  font-size: 4vh;
+  color: white;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F5F5;
+  font-size: 2.5vh;
+  padding: 2vh;
+}
+
+.modal-footer {
+  background: #333333;
+  padding: 2vh;
+}
+
+.textButtonModal {
+  padding: 1vh 2vh;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+
+.modal_micro {
+  display: flex;
+  margin-top: 4vh;
+  margin-right: 17vh;
+}
+
+.modal_microBody {
+  height: 75%;
+  position: absolute;
+}
+
+.modalmicropantalla {
+  height: 58%;
+
+  position: absolute;
+}
+
+.modal_microCara {
+
+  width: 16vh;
+  height: 12vh;
+  margin-left: 7vh;
+  margin-top: -3vh;
+  transform: rotate(-15deg);
+
+}
+
+.modal_text {
+  display: flex;
+  flex-direction: column;
+}
+
+#score {
+	font-weight: bold;
+	float: left;
+}
+
+footer {
+  bottom: 0px;
+  position: fixed;
+}
+
+#peu_pagina {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100%;
+  background: #333333;
+}
+
+#box_generalitat {
+  display: flex;
+  margin-left: 2vh;
+  padding-top: 2vh;
+  padding-right: 4vh;
+  border-right: 0.3vh solid white;
+}
+
+#img_generalitat {
+  display: flex;
+  height: 6vh;
+}
+
+#txt_generalitat {
+  display: flex;
+  color: white;
+  font-size: 2.2vh;
+  margin-left: 2vh;
+}
+
+#box_cep {
+  font-size: 2.2vh;
+  color: white;
+  margin-top: 1.5vh;
+  margin-left: 3vh;
+}
+
+.Margenprueba {
+  margin-top: 30px;
+  display: flex;
+
+  font-size: 2.2vh;
+  margin-left: 2vh;
+  font-weight: bold;
+  color: #B90000;
+
+}
+
+/*.img-micro {
+  height: 22%;
+  position: fixed;
+  margin-left: -43vh;
+  margin-top: -10vh;
+}*/
+
+.img-cara {
+  width: 10vh;
+  height: 9vh;
+  margin-left: -42vh;
+  margin-top: -12vh;
+  transform: rotate(-15deg);
+}
+
+.div-micro {
+  height: 100%;
+  margin-right: 1vh;
+}
+
+.box_micro {
+  display: block;
+  margin: auto;
+  width: 20vh;
+  margin-top: 13vh;
+  margin-left: 12vh;
+}
+.div_imagenes{
+  border-top: none;
+  border: solid 10px rgb(0, 207, 45);
+   height: auto;
+  width: 500px;
+  margin-right: 40vh;
+}
+
+.div_imagenesTextos{
+  border: none;
+   height: auto;
+  width: 500px;
+  float: right;
+  margin-right: 7vh;
+  margin-top: -11vh;
+
+
+}
+.textButtonModal {
+  font-weight: bold;
+  font-size: 2.2vh;
+
+}
+
+.Imagenes {
+  margin-left: 163vh;
+  margin-bottom: 3vh;
+
+}
+
+
+
+/* Modal final Joc */
+
+.finalModal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+.finalModal-title {
+  display: flex;
+  justify-content: center;
+  font-size: 5vh;
+  letter-spacing: 0.5vh;
+  color: #333333;
+}
+
+.finalModal-icon {
+  display: flex;
+  justify-content: center;
+  margin: 2.5vh;
+}
+
+#imgFinalModal {
+  width: 25vh;
+}
+
+.finalModal-footer {
+  display: flex;
+  flex-direction: row;
+  background: #333333;
+  padding: 2vh;
+}
+
+.finalModal-text {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 4vh;
+  color: white;
+}
+
+.finalModal-button {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
+
+/*Puntuacion*/
+
+#boxScore {
+	position: absolute;
+	bottom: 12vh;
+    left: 3vh;
+	font-size: 5vh;
+	float: left;
+}
+
+
+#txtScore {
+	color: #B90000;
+	float: left;
+}
+#tituloImagenesCorrectas{
+  font-size: 5vh;
+
+}
+
+.img-micro {
+  height: 45vh;
+  position: absolute;
+}
+.img-cara {
+  width: 17vh;
+  height: 17vh;
+  margin-left: 3vh;
+  margin-top: -3vh;
+  transform: rotate(-15deg);
+}
+
+
+#mostrarImgMorse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.modal_microCaraPol {
+  width: 11vh;
+  height: 11vh;
+  margin-left: 2vh;
+  margin-top: -3vh;
+  transform: rotate(-15deg);
+}
+#prueba{
+  margin: 2vh;
+}

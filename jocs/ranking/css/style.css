@@ -1,0 +1,165 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vh;
+    background-color: #333333;
+}
+
+#img_back {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vh;
+    height: 10vh;
+    margin: 2vh 0vh 1vh 5vh;
+}
+
+#box_title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#title {
+    display: flex;
+    font-size: 7vh;
+    margin-left: 5vh;
+    color: white;
+}
+
+#lenguas {
+    width: 25vh;
+    height: 6vh;
+    margin-top: 5vh;
+}
+
+.bandera {
+    width: 7vh;
+    margin-right: 1vh;
+    height: 4vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 76vh;
+}
+
+#mostrarImgMorse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#titleMorse {
+    display: flex;
+    font-size: 4vh;
+    color: #B90000;
+}
+
+.box_micro {
+    width: auto;
+    height: auto;
+    margin-left: 9vh;
+    margin-top: 13vh;
+}
+
+.img-micro {
+    height: 48%;
+    position: absolute;
+}
+
+.img-cara {
+    width: 15vh;
+    height: 15vh;
+    margin-left: 6vh;
+    margin-top: -3vh;
+    transform: rotate(-15deg);
+}
+
+.wrapper {
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    width: 104vh;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    margin-top: 15vh;
+}
+
+th {
+    background-color: #333333;
+    font-weight: bold;
+    color: #fff;
+    font-size: 5vh;
+    padding: 4vh 3vh !important;
+    height: 8vh;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    font-size: 4vh;
+    height: 6vh;
+    padding: 3vh !important;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #f5f5f5;
+    color: black;
+    /* background-color: rgb(185, 0, 0, 0.8);
+    color: white; */
+    transition: all .125s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: rgba(50, 98, 149, .3);
+}
+
+td.rank {
+    text-transform: capitalize;
+}
+
+#peu_pagina {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background: #333333;
+}
+
+#box_generalitat {
+    display: flex;
+    margin-left: 2vh;
+    padding-top: 2vh;
+    padding-right: 4vh;
+    border-right: 0.3vh solid white;
+}
+
+#img_generalitat {
+    display: flex;
+    height: 6vh;
+}
+
+#txt_generalitat {
+    display: flex;
+    color: white;
+    font-size: 2.2vh;
+    margin-left: 2vh;
+}
+
+#box_cep {
+    font-size: 2.2vh;
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}

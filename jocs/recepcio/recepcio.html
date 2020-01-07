@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Endivina a on pertany!</title>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script src="../js/cookies.js"></script>
+        
+        <script src="../../bootstrap/js/popper.min.js"></script>
+        <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../../assets/back.png" id="img_back" onclick="location.href='../../quiosc/quiosc.html';">
+
+            <div id="box_title_puzzle">
+                <h1 class="text-center p-2" id="title_puzzle">Trencaclosques</h1>
+            </div>
+            
+            <div id="lenguas"> 
+                <img class="bandera" src="../../assets/lenguas/bandera_catalan.png" alt="">
+                <img class="bandera" src="../../assets/lenguas/bandera_espanola.png" alt="">
+                <img class="bandera" src="../../assets/lenguas/bandera_english.png" alt="">
+            </div>
+        </header>
+
+        <!-- Modal explicació joc -->
+        <div id="explicacioJoc" class="modal fade" role="dialog">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Benvingut a al joc del trancaclosques!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal_micro">
+                            <img src="./img/micro_full.png" alt="" class="modal_microBody">
+                            <img src="./img/cara_micro.png" alt="" class="modal_microBody modal_microCara">
+                        </div>
+
+                        <div class="modal_text">
+                            <p>Ordena correctament les peces del trencaclosques.</p>
+                            <p>Quan hàgis completat correctament el trencaclosques n'apereixerà un altre.</p>
+                            <p>Tens 2 minuts per ordenar el màxim de imatges possible.</p>
+                            <p>Som-hi!!</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger textButtonModal" data-dismiss="modal">Tancar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal final de joc -->
+        <div id="modalFinal" class="modal fade modal--congratulations" role="dialog">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="finalModal-body">
+                        <div class="finalModal-title">
+                            Felicitats!!
+                        </div>
+
+                        <div class="finalModal-icon">
+                            <img id="imgFinalModal" src="./img/copa.png" alt="Trophy" />
+                        </div>
+                    </div>
+                    <div class="finalModal-footer">
+                        <div class="finalModal-text">
+                            Passa al següent joc
+                        </div>
+
+                        <div class="finalModal-button">
+                            <button type="button" class="btn btn-danger textButtonModal" data-dismiss="modal" onclick="location.href='../validacio/validacio.html';">Endevina</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-micro">
+            <div class="box_micro">
+                <img src="./img/micro_full.png" alt="" class="img-micro">
+                <img src="./img/cara_micro.png" alt="" class="img-micro img-cara">
+            </div>
+        </div>
+
+        <!-- Joc -->
+        <div class="juego">
+            <div class="answer_div">
+                <div id="answer"></div>
+            </div>
+            <div class="puzzle">
+                <div class="grid">
+                    <button class="tile tile--1" style="--area:A"></button>
+                    <button class="tile tile--2" style="--area:B"></button>
+                    <button class="tile tile--3" style="--area:C"></button>
+                    <button class="tile tile--4" style="--area:D"></button>
+                    <button class="tile tile--5" style="--area:E"></button>
+                    <button class="tile tile--6" style="--area:F"></button>
+                    <button class="tile tile--7" style="--area:G"></button>
+                    <button class="tile tile--8" style="--area:H"></button>
+                    <button class="tile tile--9 tile--empty" style="--area:I"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- conta enrera i puntuació -->
+        <div class="countdown_div">
+            <span id="countdown"></span>
+        </div>
+
+        <div id="boxScore">
+            <div id="txtScore">
+                Puntuació:&nbsp;
+            </div>
+            <div id="score">0            </div>
+        </div>
+
+        <!-- Logo correcte -->
+        <div id="correcte">
+            <img src="./img/correct.svg" alt="" width="100%" >
+        </div>
+        
+        <footer id="peu_pagina">
+            <div id="box_generalitat">
+                <img id="img_generalitat" src="../../assets/logo_generalitat_catalunya.png" alt="">
+                <div id="txt_generalitat">
+                    Generalitat <br> de Catalunya
+                </div>
+            </div>
+      
+            <div id="box_cep">
+                Centre d'Estudis <br> <strong>Politècnics</strong>
+            </div>
+            
+        </footer>
+        
+        <script type="text/javascript" src="js/recepcio.js"></script>
+    </body>
+</html>

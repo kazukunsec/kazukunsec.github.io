@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joc 1</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="../../bootstrap/js/popper.min.js"></script>
+    <script src="../../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="../js/cookies.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="../../assets/back.png" id="img_back" onclick="location.href='../../quiosc/quiosc.html';">
+
+      <div id="box_title">
+          <h1 class="text-right" id="title_joc">Endevina a on pertany!</h1>
+          <h1 class="text-left" id="title_tipus">Validació</h1>
+      </div>
+      
+      <div id="lenguas"> 
+          <img class="bandera" src="../../assets/lenguas/bandera_catalan.png" alt="">
+          <img class="bandera" src="../../assets/lenguas/bandera_espanola.png" alt="">
+          <img class="bandera" src="../../assets/lenguas/bandera_english.png" alt="">
+      </div>
+  </header>
+
+
+
+
+    <!-- <button type="button" class="btn btn_exit" data-dismiss="modal"onclick="location.href='../ranking/vistas/users.php';" >Ranking</button> -->
+
+    <!-- <div class="modal_micro">
+      <img
+        id="imgMorse"
+        src="./img/micro_full.png"
+        alt=""
+        class="modalmicropantalla"
+      />
+      <img
+        src="./img/cara_micro.png"
+        alt=""
+        class="modalmicropantalla modal_microCara"
+      />
+    </div>
+    <div>
+    <div id="imagenes" class="Imagenes"></div>
+    </div>
+    <div class="container">
+    
+      <div class="col-3 div-micro">
+        <div class="box_micro">
+          <img src="./img/micro_full.png" alt="" class="img-micro" />
+          <img src="./img/cara_micro.png" alt="" class="img-micro img-cara" />
+        </div>
+      </div>-->
+      <div class="box_micro">
+        <img src="./img/micro_full.png" alt="" class="img-micro">
+        <img src="./img/cara_micro.png" alt="" class="img-micro img-cara">
+    </div>
+    <div  id="imagenes" class="div_imagenesTextos">
+      <h1 id="tituloImagenesCorrectas" >Imatges Correctes</h1>
+      <div  id="imagenes" class="div_imagenes"></div>
+
+
+  </div>
+      <canvas id="canvas"></canvas>
+
+      <div id="boxScore">
+        <div id="txtScore">
+          Puntuació:&nbsp;
+        </div>
+        <div id="score">0</div>
+        
+      </div>
+    </div>
+
+    <footer id="peu_pagina">
+      <div id="box_generalitat">
+        <img
+          id="img_generalitat"
+          src="../../assets/logo_generalitat_catalunya.png"
+          alt=""
+        />
+        <div id="txt_generalitat">
+          Generalitat <br />
+          de Catalunya
+        </div>
+      </div>
+
+      <div id="box_cep">
+        Centre d'Estudis <br />
+        <strong>Politècnics</strong>
+      </div>
+    </footer>
+    <!--
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog  modal-dialog-centered">
+         Modal content
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Bienvenido al Juego</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Pulsa encima de las imagenes que tengan relación con la
+              emisión/recepción de la radio, pero cuidado con equivocarte que
+              perderás puntos!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger textButtonModal"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+    <div id="explicacioJoc" class="modal fade" data-backdrop="static"
+    role="dialog">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Benvingut al primer joc</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal_micro">
+              <img src="./img/micro_full.png" alt="" class="modal_microBody" />
+              <img
+                src="./img/cara_micro.png"
+                alt=""
+                class="modal_microBody modal_microCaraPol"
+              />
+            </div>
+
+            <div class="modal_text">
+              <p>
+                Benvingut a l'apartat de jocs. Aquesta secció consta de 4 jocs, en cada un d'ells obtindràs una puntuació
+                que al final de tot serà sumada i entraràs a un ranking de tots els jugadors.
+              </p>
+              <p>"Quins elements són d'emissió!" serà el primer joc.</p>
+              <p>
+                T'explico com funcina: Hauràs de seleccionar els diferents elements que estiguin
+                relacionats amb l'emissió.
+              </p>
+              <p>
+                Si les endevines la puntuació pujarà, però si t'equivoques aquesta baixarà.
+              </p>
+              <p>Bona sort!!</p>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <form role="form" id="myForm">
+              <div class="form-group">
+                  <p class="colorNombre" for="inputName">Introdueix Nom: </p>
+                  <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Introdueix tres lletres"/>
+              </div>
+              
+          </form>
+            <button
+              type="button"
+              class="btn btn-danger textButtonModal"
+              data-dismiss="modal"
+              id="cerrarModal"
+              
+              onclick="funcio()"
+            >
+              Tancar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+<div id="gameover" class="modal fade" role="dialog">
+      <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Fi del  joc</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="modal_micro">
+                      <img src="./img/micro_full.png" alt="" class="modal_microBody">
+                      <img src="./img/cara_micro.png" alt="" class="modal_microBody modal_microCara">
+                  </div>
+  
+                  <div class="modal_text">
+                     
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger textButtonModal" data-dismiss="modal">Tancar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+-->
+
+    <!-- Modal final de joc -->
+    <div
+      id="modalFinal"
+      class="modal fade modal--congratulations"
+      role="dialog"
+    >
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="finalModal-body">
+            <div class="finalModal-title">
+              Felicitats!!
+            </div>
+
+            <div class="finalModal-icon">
+              <img
+                id="imgFinalModal"
+                src="./img/copa.png"
+                alt="Trophy"
+              />
+            </div>
+          </div>
+          <div class="finalModal-footer">
+            <div class="finalModal-text">
+              Passa al següent joc
+            </div>
+
+            <div class="finalModal-button">
+              <button
+                type="button"
+                class="btn btn-danger textButtonModal"
+                data-dismiss="modal"
+                onclick="location.href='../transmision/transmision.html';"
+              >
+                Morse
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/joc.js"></script>
+    
+   
+  </body>
+</html>

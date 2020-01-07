@@ -1,0 +1,274 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vh;
+    background-color: #333333;
+}
+
+#img_back {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vh;
+    height: 10vh;
+    margin: 2vh 0vh 1vh 5vh;
+}
+
+#box_title_morse {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#title_morse {
+    display: flex;
+    font-size: 7vh;
+    margin-left: 5vh;
+    color: white;
+}
+
+#lenguas {
+    width: 25vh;
+    height: 6vh;
+    margin-top: 5vh;
+}
+
+.bandera {
+    width: 7vh;
+    margin-right: 1vh;
+    height: 4vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 76vh;
+}
+
+#mostrarImgMorse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#titleMorse {
+    display: flex;
+    font-size: 4vh;
+    color: #B90000;
+}
+
+#imgMorse {
+    display: flex;
+    height: 50vh;
+    width: 45vh;
+}
+
+#boxScore {
+    display: flex;
+    margin-left: -5vh;
+    font-size: 5vh;
+    margin-top: 5vh;
+}
+
+#txtScore {
+    color: #B90000;
+}
+
+#score {
+    font-weight: bold;
+}
+
+#boxContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#boxParaula {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#boxParaulesMorse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 25vh;
+    margin: 0vh 3vh;
+}
+
+.boxMorse {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 20vh;
+    width: 132vh;
+    margin: 3vh;
+    padding: 5vh;
+    font-size: 6vh;
+    background-color: #B90000;
+    color: white;
+    
+}
+
+#peu_pagina {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background: #333333;
+}
+
+#box_generalitat {
+    display: flex;
+    margin-left: 2vh;
+    padding-top: 2vh;
+    padding-right: 4vh;
+    border-right: 0.3vh solid white;
+}
+
+#img_generalitat {
+    display: flex;
+    height: 6vh;
+}
+
+#txt_generalitat {
+    display: flex;
+    color: white;
+    font-size: 2.2vh;
+    margin-left: 2vh;
+}
+
+#box_cep {
+    font-size: 2.2vh;
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}
+
+/* Modal explicació joc */
+.modal-dialog {
+    max-width: 80vh;
+}
+
+.modal-content {
+    border: 0.5vh solid rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+    background-color: #333333;
+    padding: 2vh;
+}
+
+.modal-title {
+    font-size: 4vh;
+    color: white;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    font-size: 2.5vh;
+    padding: 2vh;
+}
+
+.modal-footer {
+    background: #333333;
+    padding: 2vh;
+}
+
+.textButtonModal {
+    padding: 1vh 2vh;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.modal_micro {
+    display: flex;
+    margin-top: 4vh;
+    margin-right: 17vh;
+}
+
+.modal_microBody {
+    height: 75%;
+    position: absolute;
+}
+
+.modal_microCara {
+    width: 11vh;
+    height: 11vh;
+    margin-left: 2vh;
+    margin-top: -3vh;
+    transform: rotate(-15deg);
+}
+
+.modal_text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal final Joc */
+
+.finalModal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.finalModal-title {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    letter-spacing: 0.5vh;
+    color: #333333;
+}
+
+.finalModal-icon {
+    display: flex;
+    justify-content: center;
+    margin: 2.5vh;
+}
+
+#imgFinalModal {
+    width: 25vh;
+}
+
+.finalModal-footer {
+    display: flex;
+    flex-direction: row;
+    background: #333333;
+    padding: 2vh;
+}
+
+.finalModal-text {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 4vh;
+    color: white;
+}
+
+.finalModal-button {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+}
