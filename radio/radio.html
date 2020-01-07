@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ràdio</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script type="text/javascript" src="js/radio.js"></script>
+        <script src="../bootstrap/js/popper.min.js"></script>
+        <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../assets/back.png" id="img_back" onclick="location.href='../quiosc/quiosc.html';">
+
+            <div id="box_title_radio">
+                <h1 class="text-center p-2" id="title_radio">Funcionament de la ràdio</h1>
+            </div>
+            
+            <div id="lenguas"> 
+                <img class="bandera" src="../assets/lenguas/bandera_catalan.png" alt="">
+                <img class="bandera" src="../assets/lenguas/bandera_espanola.png" alt="">
+                <img class="bandera" src="../assets/lenguas/bandera_english.png" alt="">
+            </div>
+        </header>
+        <div class="content">
+            <div class="main-container justify-content-center">
+                <div id="radio">
+                    <div class="inner-box">
+                        <div class="top-section">
+                            <div id="iniciPresentacio"></div>
+                            <div id="presentacio"></div>
+                        </div>
+                        <div class="bottom-section">
+                            <div class="inner-wrapper">
+                                <div class="volumes" id="left-volume">
+                                    <div class="circle1">
+                                        <div class="circle2">
+                                            <div id="atras" class="circle3">
+                                                <!-- Boto enrere -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="volumes" id="right-volume">
+                                    <div class="circle1">
+                                        <div class="circle2">
+                                            <div id="adelante" class="circle3">
+                                                <!-- Boto endevant -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pannel-wrapper">
+                                    <div id="box_numero">
+                                        <!-- <div id="numeroCount"></div> -->
+                                    </div>
+                                    <div class="box_linea_radio">
+                                        <div class="blacklines" id="blackline1">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="blacklines" id="blackline2">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="texts vl">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
